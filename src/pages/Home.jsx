@@ -2,10 +2,10 @@ import Navbar from "../components/Navbar";
 import WeatherCard from "../components/WeatherCard";
 import HourlyForecast from "../components/HourlyForecast";
 import Forecast from "../components/Forecast";
+import MapView from "../components/MapView";
 import HealthWidgets from "../components/HealthWidgets";
 import WeatherBackground from "../components/WeatherBackground";
 import { motion } from "framer-motion";
-import WeatherMap from "../components/MapView";
 
 function Home({ data, onSearch }) {
   if (!data) return <div className="h-screen bg-[#0a0f1e]" />;
@@ -60,7 +60,7 @@ function Home({ data, onSearch }) {
             
             {/* MapView must fill its parent height */}
             <div className="w-full h-full min-h-full">
-               <WeatherMap data={data} />
+               <MapView data={data} />
             </div>
           </div>
         </div>
