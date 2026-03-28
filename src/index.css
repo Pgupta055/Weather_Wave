@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+/* --- DARK GLASSMOPRHISM UTILITY --- */
+.glass-box {
+  background-color: rgba(22, 22, 26, 0.4); /* Dark translucent base */
+  backdrop-filter: blur(16px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.06); /* Ultra-thin border */
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3); /* Soft shadow */
+}
+
+body {
+  margin: 0;
+  background-color: #0d0e12; /* Deep background color */
+  color: white;
+  font-family: 'Inter', system-ui, sans-serif; /* Use a modern sans-serif */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Hide main scrollbar but allow scrolling */
+html {
+  overflow: -moz-scrollbars-none;
+  -ms-overflow-style: none; 
+}
+html::-webkit-scrollbar { width: 0 !important; }
+
+/* Custom thin scrollbar for the Hourly row */
+.custom-scrollbar::-webkit-scrollbar { height: 4px; }
+.custom-scrollbar::-webkit-scrollbar-track { background: transparent; }
+.custom-scrollbar::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.1); border-radius: 4px; }
+@keyframes fall {
+  from { transform: translateY(-20px); opacity: 0; }
+  50% { opacity: 1; }
+  to { transform: translateY(300px); opacity: 0; }
+}
+
+@keyframes drift {
+  from { transform: translateX(-50%); }
+  to { transform: translateX(150%); }
+}
