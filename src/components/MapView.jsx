@@ -31,8 +31,8 @@ function MapView({ data }) {
         
 
 <TileLayer
-  attribution='&copy; Stadia Maps, &copy; OpenMapTiles, &copy; OpenStreetMap contributors'
-  url={`https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png?api_key=${apiKey}`}
+  attribution='&copy; OpenStreetMap contributors &copy; CARTO'
+  url="https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
 />
 
         {/* Optional: Add a subtle blue glow to the user's location marker */}
