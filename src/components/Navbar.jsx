@@ -15,7 +15,7 @@ function Navbar({ onSearch }) {
     <nav className="w-full bg-white/5 backdrop-blur-md text-white p-4 flex flex-col md:flex-row justify-between items-center gap-4 border-b border-white/10">
       <div className="flex items-center gap-2">
         <span className="text-2xl">🌦</span>
-        <h1 className="text-xl font-bold tracking-tighter uppercase">SkyCast Pro</h1>
+        <h1 className="text-xl font-bold tracking-tighter uppercase">Weather Wave</h1>
       </div>
 
       {/* SEARCH FORM */}
